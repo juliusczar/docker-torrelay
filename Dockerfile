@@ -1,7 +1,7 @@
 FROM clearlinux:latest
 
 # Tor version
-ARG TOR_VERSION=0.4.0.5
+ARG TOR_VERSION=0.4.1.2-alpha
 
 # Set compiler perfomance options
 ENV CFLAGS "-g -march=ivybridge -O3 -feliminate-unused-debug-types -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=32 -Wformat -Wformat-security -Wl,--copy-dt-needed-entries -m64 -fasynchronous-unwind-tables -Wp,-D_REENTRANT -ftree-loop-distribute-patterns -Wl,-z -Wl,now -Wl,-z -Wl,relro -fno-semantic-interposition -ffat-lto-objects -fno-signed-zeros -fno-trapping-math -fassociative-math -Wl,-sort-common"
